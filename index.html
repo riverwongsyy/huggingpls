@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Network - Protect Earth</title>
+    <title>张家口旅游 - 探索大好河山</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', 'Microsoft YaHei', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         :root {
@@ -101,7 +101,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2073&q=80');
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1517799099276-20a4c4c11344?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
             background-size: cover;
             background-position: center;
             height: 80vh;
@@ -252,17 +252,17 @@
             color: var(--text);
         }
 
-        .initiatives {
+        .attractions {
             background-color: var(--white);
         }
 
-        .initiatives-grid {
+        .attractions-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
 
-        .initiative-card {
+        .attraction-card {
             background-color: var(--light);
             border-radius: 10px;
             overflow: hidden;
@@ -270,37 +270,37 @@
             transition: transform 0.3s ease;
         }
 
-        .initiative-card:hover {
+        .attraction-card:hover {
             transform: translateY(-10px);
         }
 
-        .initiative-img {
+        .attraction-img {
             height: 200px;
             overflow: hidden;
         }
 
-        .initiative-img img {
+        .attraction-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
 
-        .initiative-card:hover .initiative-img img {
+        .attraction-card:hover .attraction-img img {
             transform: scale(1.1);
         }
 
-        .initiative-content {
+        .attraction-content {
             padding: 1.5rem;
         }
 
-        .initiative-content h3 {
+        .attraction-content h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--dark);
         }
 
-        .initiative-content p {
+        .attraction-content p {
             margin-bottom: 1.5rem;
         }
 
@@ -427,7 +427,7 @@
                 grid-template-columns: 1fr;
             }
             
-            .initiatives-grid {
+            .attractions-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
             
@@ -475,7 +475,7 @@
                 display: block;
             }
             
-            .initiatives-grid {
+            .attractions-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -499,19 +499,19 @@
     <header>
         <div class="container nav-container">
             <div class="logo">
-                <i class="fas fa-seedling"></i>
-                <span>Green Network</span>
+                <i class="fas fa-mountain"></i>
+                <span>张家口旅游</span>
             </div>
             <nav>
                 <div class="mobile-menu">
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#initiatives">Initiatives</a></li>
-                    <li><a href="#get-involved">Get Involved</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#about">关于张家口</a></li>
+                    <li><a href="#attractions">特色景点</a></li>
+                    <li><a href="#tours">旅游线路</a></li>
+                    <li><a href="#contact">联系我们</a></li>
                 </ul>
             </nav>
         </div>
@@ -520,9 +520,9 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>Protect Our Planet, Preserve Our Future</h1>
-            <p>Join the global movement to create a sustainable world through conservation, education, and community action.</p>
-            <a href="#get-involved" class="btn">Join Our Network</a>
+            <h1>探索张家口，领略大好河山</h1>
+            <p>从草原天路到冰雪世界，从千年古堡到民俗风情，体验河北张家口的独特魅力</p>
+            <a href="#tours" class="btn">规划我的行程</a>
         </div>
     </section>
 
@@ -530,83 +530,110 @@
     <section id="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Green Network</h2>
-                <p>We are a global community dedicated to environmental protection and sustainable development.</p>
+                <h2>关于张家口</h2>
+                <p>张家口位于河北省西北部，距北京180公里，是华北平原向蒙古高原的过渡地带，拥有丰富的自然和人文旅游资源[5](@ref)。</p>
             </div>
             <div class="about-content">
                 <div class="about-img">
-                    <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Team planting trees">
+                    <img src="https://images.unsplash.com/photo-1542662565-7d77d61ab3b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="张家口全景">
                 </div>
                 <div class="about-text">
-                    <h3>Our Mission</h3>
-                    <p>Green Network is committed to creating a sustainable future by protecting natural ecosystems, promoting renewable energy, and empowering communities to take environmental action.</p>
-                    <p>Founded in 2010, we've grown from a small grassroots organization to an international network with over 50,000 members across 120 countries.</p>
-                    <p>Our approach combines scientific research, community engagement, and policy advocacy to address the most pressing environmental challenges of our time.</p>
-                    <a href="#" class="btn">Learn More</a>
+                    <h3>京西要塞，多元文化交融之地</h3>
+                    <p>张家口总面积3.7万平方公里，辖20个县区，总人口468万。地处华北平原向蒙古高原的过渡地带，境内有着三大主要山脉，分别是燕山、阴山、太行山[5](@ref)。阴山山脉横贯中部，将全市划分为坝上、坝下两个不同的自然区域，形成了集森林草原、冰雪温泉、高原湖泊于一体的生态旅游资源群[5](@ref)。</p>
+                    <p>张家口拥有国家级文物保护单位48个，省级文物保护单位81个，是河北省文物大市之一。阳原泥河湾古人类遗址、涿鹿三祖文化圣地是河北省两大人文旅游名片，被公认为"东方人类从这里走来，中华文明从这里走来"[5](@ref)。</p>
+                    <p>作为2022年北京冬奥会雪上项目主赛场，张家口已成为国际知名的滑雪旅游目的地，崇礼区被《纽约时报》评选为2019年全球52个值得前往的旅游目的地之一[7](@ref)。</p>
+                    <a href="#contact" class="btn">了解更多</a>
                 </div>
             </div>
             <div class="stats">
                 <div class="stat-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3 class="counter" data-target="48">0</h3>
+                    <p>国家级文保单位</p>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-skiing"></i>
+                    <h3 class="counter" data-target="9">0</h3>
+                    <p>大型滑雪场</p>
+                </div>
+                <div class="stat-item">
                     <i class="fas fa-tree"></i>
-                    <h3 class="counter" data-target="2500000">0</h3>
-                    <p>Trees Planted</p>
+                    <h3 class="counter" data-target="50">0</h3>
+                    <p>森林覆盖率超过50%</p>
                 </div>
                 <div class="stat-item">
-                    <i class="fas fa-users"></i>
-                    <h3 class="counter" data-target="50000">0</h3>
-                    <p>Active Members</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-globe-americas"></i>
-                    <h3 class="counter" data-target="120">0</h3>
-                    <p>Countries Reached</p>
-                </div>
-                <div class="stat-item">
-                    <i class="fas fa-recycle"></i>
-                    <h3 class="counter" data-target="1500">0</h3>
-                    <p>Cleanup Projects</p>
+                    <i class="fas fa-landmark"></i>
+                    <h3 class="counter" data-target="1804">0</h3>
+                    <p>公里长城遗迹</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Initiatives Section -->
-    <section class="initiatives" id="initiatives">
+    <!-- Attractions Section -->
+    <section class="attractions" id="attractions">
         <div class="container">
             <div class="section-title">
-                <h2>Our Initiatives</h2>
-                <p>Discover the key programs and projects we're implementing to protect our planet.</p>
+                <h2>特色景点</h2>
+                <p>探索张家口最引人入胜的自然景观和人文遗产</p>
             </div>
-            <div class="initiatives-grid">
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://dialogue.earth/content/uploads/2021/04/lessons-from-the-rush-to-reforest-china-dialogue-2400x1599.jpg" alt="Reforestation">
+            <div class="attractions-grid">
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="https://images.unsplash.com/photo-1596392177345-8b3dee1b4739?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="草原天路">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Global Reforestation</h3>
-                        <p>Planting millions of trees worldwide to restore ecosystems, combat climate change, and protect biodiversity.</p>
-                        <a href="#" class="btn">Learn More</a>
-                    </div>
-                </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1621451537084-482c73073a0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Ocean Conservation">
-                    </div>
-                    <div class="initiative-content">
-                        <h3>Ocean Conservation</h3>
-                        <p>Protecting marine ecosystems, reducing plastic pollution, and promoting sustainable fishing practices.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="attraction-content">
+                        <h3>草原天路</h3>
+                        <p>中国最美的风景线之一，被誉为中国版"66号公路"。蜿蜒曲折于群山峻岭之巅，冬季可欣赏雪花、风车、树挂、雾凇构成的北国雪景[7](@ref)。</p>
+                        <a href="#" class="btn">了解更多</a>
                     </div>
                 </div>
-                <div class="initiative-card">
-                    <div class="initiative-img">
-                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" alt="Renewable Energy">
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="https://images.unsplash.com/photo-1570470088778-2d65fe38a0f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" alt="崇礼滑雪场">
                     </div>
-                    <div class="initiative-content">
-                        <h3>Renewable Energy</h3>
-                        <p>Promoting solar, wind, and other clean energy sources to reduce dependence on fossil fuels.</p>
-                        <a href="#" class="btn">Learn More</a>
+                    <div class="attraction-content">
+                        <h3>崇礼滑雪场</h3>
+                        <p>拥有万龙、云顶、太舞、富龙等9家大型滑雪场，形成国内最大的雪场集群。冬季风速平均为2级，温度为零下12度，存雪期达150多天，被国际雪联称为"世界上最适宜滑雪的地方"之一[7](@ref)。</p>
+                        <a href="#" class="btn">了解更多</a>
                     </div>
+                </div>
+                <div class="attraction-card">
+                    <div class="attraction-img">
+                        <img src="https://images.unsplash.com/photo-1583444985050-6d78c5f16f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="暖泉古镇">
+                    </div>
+                    <div class="attraction-content">
+                        <h3>暖泉古镇</h3>
+                        <p>位于蔚县最西端，以神奇的泉水、繁荣的集市、精美的古建筑和"天下奇绝打树花"而闻名。是中国历史文化名镇、全国特色景观旅游名镇[7](@ref)。</p>
+                        <a href="#" class="btn">了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tours Section -->
+    <section id="tours">
+        <div class="container">
+            <div class="section-title">
+                <h2>精品旅游线路</h2>
+                <p>精心设计的旅游路线，带您深度体验张家口多元文化</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>京西南访古寻幽之旅</h3>
+                    <p>这条线路包含怀来官厅服务区、官厅水库国家湿地公园、涿鹿黄帝城、蔚县暖泉镇、蔚州古城等景点。游客可以品尝"四路聚"全鱼宴，漫步湿地观鸟游湖，参观黄帝城感受中华文化源远流长，欣赏国家级非遗"打树花"，体验明清古城风貌[1](@ref)。</p>
+                    
+                    <h3>冬奥冰雪体验之旅</h3>
+                    <p>以崇礼区为核心，参观国家跳台滑雪中心"雪如意"、国家越野滑雪中心等冬奥场馆，体验世界级滑雪场地。结合赤城温泉"关外第一泉"，享受滑天然雪、沐御泉浴的独特体验[5,8](@ref)。</p>
+                    
+                    <h3>长城文化探索之旅</h3>
+                    <p>探索张家口境内1804公里长城遗迹，包括样边长城、独石口长城、大营盘长城等。参观城市地标大境门，感受"军事之门"、"融合之门"的历史厚重感[7](@ref)。</p>
+                    
+                    <a href="#contact" class="btn">查询所有线路</a>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1506906736138-59c3cdb140ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="张家口旅游线路">
                 </div>
             </div>
         </div>
@@ -615,9 +642,9 @@
     <!-- CTA Section -->
     <section class="cta" id="get-involved">
         <div class="container">
-            <h2>Join Our Global Movement</h2>
-            <p>Together, we can create a sustainable future for generations to come. Every action counts, no matter how small.</p>
-            <a href="#" class="btn">Become a Member</a>
+            <h2>开启您的张家口之旅</h2>
+            <p>现在预订，体验张家口四季不同的自然风光和人文魅力，从草原到雪山，从古堡到现代滑雪场</p>
+            <a href="#contact" class="btn">立即预订</a>
         </div>
     </section>
 
@@ -626,44 +653,44 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>Green Network</h3>
-                    <p>We are dedicated to protecting our planet through collaborative action, education, and sustainable solutions.</p>
+                    <h3>张家口旅游</h3>
+                    <p>为您提供最全面的张家口旅游资讯和服务，探索大好河山的独特魅力。</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Links</h3>
+                    <h3>快速链接</h3>
                     <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#initiatives">Initiatives</a></li>
-                        <li><a href="#get-involved">Get Involved</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于张家口</a></li>
+                        <li><a href="#attractions">特色景点</a></li>
+                        <li><a href="#tours">旅游线路</a></li>
+                        <li><a href="#contact">联系我们</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Our Programs</h3>
+                    <h3>特色旅游</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Reforestation</a></li>
-                        <li><a href="#">Ocean Cleanup</a></li>
-                        <li><a href="#">Wildlife Protection</a></li>
-                        <li><a href="#">Climate Education</a></li>
-                        <li><a href="#">Sustainable Agriculture</a></li>
+                        <li><a href="#">冰雪滑雪游</a></li>
+                        <li><a href="#">草原生态游</a></li>
+                        <li><a href="#">历史文化游</a></li>
+                        <li><a href="#">民俗体验游</a></li>
+                        <li><a href="#">研学教育游</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h3>Contact Us</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Copper Creek Drive, New York</p>
-                    <p><i class="fas fa-phone"></i> +1 (312) 171-0771</p>
-                    <p><i class="fas fa-envelope"></i> support@greennetwork.org</p>
+                    <h3>联系我们</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 河北省张家口市桥西区</p>
+                    <p><i class="fas fa-phone"></i> 0313-XXXXXXX</p>
+                    <p><i class="fas fa-envelope"></i> info@zjktourism.com</p>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Green Network. All rights reserved.</p>
+                <p>&copy; 2025 张家口旅游. 保留所有权利。</p>
             </div>
         </div>
     </footer>
@@ -712,11 +739,11 @@
                         behavior: 'smooth'
                     });
                     
+                    // Close mobile menu after clicking
                     document.querySelector('nav ul').classList.remove('active');
                 }
             });
         });
     </script>
 </body>
-
 </html>
